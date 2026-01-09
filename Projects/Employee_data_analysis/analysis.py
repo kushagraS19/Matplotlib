@@ -2,7 +2,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("Employee_updated.csv")
+data = "Employee_updated.csv"
+
+df = pd.read_csv(data)
 df = df[df['Salary'] > 0]
 
 mean = np.mean(df["Salary"])
